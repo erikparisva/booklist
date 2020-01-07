@@ -54,7 +54,7 @@ function addBook(event){
 }
 function removeBook(event){
     if(event.target.classList.contains('delete-item')){
-        if(confirm('Are you sure you want to delte this entry?')){
+        if(confirm('Are you sure you want to delete this entry?')){
             event.target.parentElement.remove();
 
             removeBookFromLocalStorage(event.target.parentElement);
